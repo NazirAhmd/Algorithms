@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms\Algorithms.csproj", "{482581CB-A7DE-4FD8-AF07-8B60E71701AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriverApp", "DriverApp\DriverApp.csproj", "{BAD11369-D6DA-4FDE-85A6-30D25765BA4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{482581CB-A7DE-4FD8-AF07-8B60E71701AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{482581CB-A7DE-4FD8-AF07-8B60E71701AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{482581CB-A7DE-4FD8-AF07-8B60E71701AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{482581CB-A7DE-4FD8-AF07-8B60E71701AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAD11369-D6DA-4FDE-85A6-30D25765BA4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD11369-D6DA-4FDE-85A6-30D25765BA4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD11369-D6DA-4FDE-85A6-30D25765BA4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD11369-D6DA-4FDE-85A6-30D25765BA4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF5EEB01-4BB2-49AB-BB3C-669700A56318}
+	EndGlobalSection
+EndGlobal

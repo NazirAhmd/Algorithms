@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{482581CB-A7DE-4FD8-AF07-8B60E71701AD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Algorithms</RootNamespace>
+    <AssemblyName>Algorithms</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arrays\LeaderInAnArray.cs" />
+    <Compile Include="BST\CeilingOnLeftSide.cs" />
+    <Compile Include="Matrix\BoundaryElements.cs" />
+    <Compile Include="Matrix\RotateMatrixCounterClockwise90.cs" />
+    <Compile Include="Matrix\SearchInRowColumnSortedMatrix.cs" />
+    <Compile Include="Matrix\SnakePattern.cs" />
+    <Compile Include="Matrix\SpiralPattern.cs" />
+    <Compile Include="Matrix\TransposeMatrix.cs" />
+    <Compile Include="Queue\GenerateNumbersWithGivenDigits.cs" />
+    <Compile Include="Queue\ReverseQueue.cs" />
+    <Compile Include="Sorting\ChocolateDistribution.cs" />
+    <Compile Include="Sorting\CountInversionsInArray.cs" />
+    <Compile Include="Sorting\HoarePartition.cs" />
+    <Compile Include="Sorting\IntersectionOfTwoSortedArray.cs" />
+    <Compile Include="Sorting\KthSmallestElement.cs" />
+    <Compile Include="Sorting\LomutoPartition.cs" />
+    <Compile Include="Sorting\MergeTwoPartSortedArray.cs" />
+    <Compile Include="Sorting\SegregateTwoTypes.cs" />
+    <Compile Include="Sorting\UnionOfTwoSortedArrays.cs" />
+    <Compile Include="Stack\BalancedParenthesis.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stack\NextGreaterElement.cs" />
+    <Compile Include="Stack\PreviousGreaterElement.cs" />
+    <Compile Include="Stack\StockSpanProblem.cs" />
+    <Compile Include="Tree\CheckForBalancedTree.cs" />
+    <Compile Include="Tree\ChildrenSumProperty.cs" />
+    <Compile Include="Tree\HeightOfBinaryTree.cs" />
+    <Compile Include="Tree\LevelOrderTraversalLineByLine.cs" />
+    <Compile Include="Tree\MaximumValueInBinaryTree.cs" />
+    <Compile Include="Tree\Node.cs" />
+    <Compile Include="Tree\PrintLeftViewOfBinaryTree.cs" />
+    <Compile Include="Tree\PrintNodesAtDistance.cs" />
+    <Compile Include="Tree\SizeOfBinaryTree.cs" />
+    <Compile Include="Trie\AutoComplete.cs" />
+    <Compile Include="Trie\CountDistictRowsInMatrix.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Heap\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
