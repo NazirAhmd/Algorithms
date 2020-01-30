@@ -42,7 +42,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrays\LeaderInAnArray.cs" />
+    <Compile Include="Arrays\LeftRotateAnArray.cs" />
+    <Compile Include="Arrays\ReverseAnArray.cs" />
+    <Compile Include="Backtracking\StringPermutation.cs" />
     <Compile Include="BST\CeilingOnLeftSide.cs" />
+    <Compile Include="Common\Utils.cs" />
+    <Compile Include="DynamicProgramming\LongestCommonSubsequence.cs" />
+    <Compile Include="Greedy\JobSequencing.cs" />
+    <Compile Include="Greedy\MinimumNoOfCoins.cs" />
+    <Compile Include="Hashing\CountFrequency.cs" />
+    <Compile Include="Hashing\DistinctElements.cs" />
+    <Compile Include="Hashing\IntersectionOfArrays.cs" />
+    <Compile Include="Hashing\PairWithGivenSum.cs" />
+    <Compile Include="Hashing\UnionOfArrays.cs" />
+    <Compile Include="Heap\MinHeap.cs" />
     <Compile Include="Matrix\BoundaryElements.cs" />
     <Compile Include="Matrix\RotateMatrixCounterClockwise90.cs" />
     <Compile Include="Matrix\SearchInRowColumnSortedMatrix.cs" />
@@ -77,8 +90,6 @@
     <Compile Include="Trie\AutoComplete.cs" />
     <Compile Include="Trie\CountDistictRowsInMatrix.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Heap\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
