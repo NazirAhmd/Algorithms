@@ -8,9 +8,11 @@ namespace DriverApp
     {
         static void Main(string[] args)
         {
-            var obj = new LongestCommonSubsequence();
-            string a = "XYZ", b = "XASSDZ";
-            Console.WriteLine(obj.Memoization(a, b, a.Length, b.Length));
+            var obj = new MaximumCuts();
+            //int[] arr = { 3, 4, 2, 8, 10 };
+            //int[] arr = { 4, 10, 6, 5, 8, 11, 2, 20 };
+            int[] arr = { 1, 2, 3 };
+            Console.WriteLine(obj.CountTabulation(5, arr));
         }
     }
 }
