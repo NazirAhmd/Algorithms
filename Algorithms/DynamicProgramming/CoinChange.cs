@@ -1,36 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Algorithms.DynamicProgramming
+﻿namespace Algorithms.DynamicProgramming
 {
     public class CoinChange
     {
-        public int CountWays(int[] coins, int sum)
+        public int CountWaysRecursive(int[] coins, int n, int sum)
         {
             if (sum == 0)
                 return 1;
-            int cnt = 0;
-            for (int i = 0; i < coins.Length; i++)
+            if (n == 0)
+                return 0;
+            int res = CountWaysRecursive(coins, n - 1, sum);
+            if (sum - coins[n - 1] >= 0)
+                res += CountWaysRecursive(coins, n, sum - coins[n - 1]);
+            return res;
+        }
+
+
+        //dp[i,j] = the no. of combinations we can get with sum i and coins from 1 to j
+        public int CountWaysDp(int[] c, int n, int sum)
+        {
+            int[,] dp = new int[sum + 1, n + 1];
+            for (int j = 0; j < n + 1; j++)
             {
-                if (sum - coins[i] >= 0)
+                dp[0, j] = 1;
+            }
+            for (int i = 1; i < sum + 1; i++)
+            {
+                dp[i, 0] = 0;
+            }
+            for (int i = 1; i < sum + 1; i++)
+            {
+                for (int j = 1; j < n + 1; j++)
                 {
-                    cnt += CountWays(coins, sum - coins[i]);
+                    dp[i, j] = dp[i, j - 1];
+                    if (i >= c[j - 1])
+                        dp[i, j] += dp[i - c[j - 1], j];
                 }
             }
-            return cnt;
+            return dp[sum, n];
         }
     }
-
-    //class Program
-    //{
-    //    static void Main(string[] args)
-    //    {
-    //        var obj = new CoinChange();
-    //        int[] coins = { 1, 2, 3 };
-    //        Console.WriteLine(obj.CountWays(coins, 4));
-    //    }
-    //}
 }

@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +8,12 @@ namespace Algorithms.DynamicProgramming
 {
     public class MinimumCoins
     {
+        /// <summary>
+        /// Minimum coins needed to make the value to v
+        /// </summary>
+        /// <param name="coins">Infinite supply of each coin</param>
+        /// <param name="v"></param>
+        /// <returns></returns>
         public int CountRecursive(int[] coins, int v)
         {
             if (v == 0)

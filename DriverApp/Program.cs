@@ -8,11 +8,10 @@ namespace DriverApp
     {
         static void Main(string[] args)
         {
-            var obj = new MaximumCuts();
-            //int[] arr = { 3, 4, 2, 8, 10 };
-            //int[] arr = { 4, 10, 6, 5, 8, 11, 2, 20 };
-            int[] arr = { 1, 2, 3 };
-            Console.WriteLine(obj.CountTabulation(5, arr));
+            var obj = new KnapsackProblem();
+            int[] w = { 5, 4, 6, 3 };
+            int[] v = { 10, 40, 30, 50 };
+            Console.WriteLine(obj.KnapSackRecursive(10, w, v, w.Length));
         }
     }
 }
